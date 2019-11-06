@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.bluetooth.BluetoothAdapter;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Pair;
 import android.view.View;
 import android.widget.Toast;
 
@@ -40,5 +41,10 @@ public class MainActivity extends AppCompatActivity {
             startActivityForResult(new Intent(BluetoothAdapter.ACTION_REQUEST_DISCOVERABLE),1);
             Toast.makeText(this,"Making discoverable",Toast.LENGTH_LONG).show();
         }
+    }
+
+    public void goToPairDeviceScreen(View view){
+        Intent pairDeviceIntent = new Intent(MainActivity.this, PairListActivity.class);
+        startActivity(pairDeviceIntent);
     }
 }

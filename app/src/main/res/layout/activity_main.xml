@@ -34,4 +34,12 @@
             android:onClick="offBluetoothSetting"
             />
     </LinearLayout>
+    <Button
+        android:id="@+id/btnGoToPairDeviceScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go To Pair Device Screen"
+        android:onClick="goToPairDeviceScreen"
+        android:layout_gravity="center"
+        />
 </LinearLayout>
