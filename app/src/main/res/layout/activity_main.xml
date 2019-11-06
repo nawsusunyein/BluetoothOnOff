@@ -20,6 +20,13 @@
             android:onClick="onBluetoothSetting"
             />
         <Button
+            android:id="@+id/btnDiscoverable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Discoverable"
+            android:onClick="onBluetoothDiscoverableSetting"
+            />
+        <Button
             android:id="@+id/btnOff"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

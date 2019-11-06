@@ -34,4 +34,11 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(this,"Bluetooth is turned off",Toast.LENGTH_LONG).show();
 
     }
+
+    public void onBluetoothDiscoverableSetting(View view){
+        if(!bAdapter.isDiscovering()){
+            startActivityForResult(new Intent(BluetoothAdapter.ACTION_REQUEST_DISCOVERABLE),1);
+            Toast.makeText(this,"Making discoverable",Toast.LENGTH_LONG).show();
+        }
+    }
 }
